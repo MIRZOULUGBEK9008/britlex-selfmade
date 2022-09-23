@@ -115,7 +115,6 @@ img {
   background-color: var(--light-black);
   color: var(--white);
   font-size: 20px;
-  line-height: normal;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -134,7 +133,12 @@ img {
   padding: 15px 57px;
   border: 2px solid var(--light-black);
   font-size: 24px;
-  line-height: normal;
+}
+
+.button--big {
+  font-size: 36px;
+  padding: 32px 118px;
+  border-radius: 15px;
 }
 
 /* LOGO  */
@@ -161,7 +165,7 @@ img {
 /* SITE-HEADER  */
 .site-header {
   padding-top: 55px;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 .site-header__container {
@@ -195,7 +199,6 @@ img {
   text-decoration: none;
   color: var(--light-black);
   font-size: 20px;
-  line-height: normal;
   font-weight: 500;
 }
 
@@ -205,4 +208,37 @@ img {
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+
+/* HERO  */
+.hero__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../img/hero-bg.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 530px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 24px;
 }
