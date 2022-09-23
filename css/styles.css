@@ -1,9 +1,38 @@
 /* CUSTOM-PROPS */
 :root {
-
+  --light-black: #263238;
+  --black: #000;
+  --gray: #8f95a5;
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+  url("Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.woff2") format("woff2"),
+  url("Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Medium.woff2") format("woff2"),
+  url("Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 /* GLOBAL-STYLES  */
@@ -46,17 +75,17 @@ img {
 
 /* CONTAINER  */
 .container {
-  max-width: 1200px;
+  max-width: 1380px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 
 /* VISUALLY-HIDDEN  */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -65,7 +94,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 
 /* MAIN-CONTENT  */
