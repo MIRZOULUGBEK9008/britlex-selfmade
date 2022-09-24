@@ -239,6 +239,16 @@ img {
   object-fit: contain;
 }
 
+
+/* TITLE  */
+.title {
+  font-size: 48px;
+  line-height: 166%;
+  color: var(--black);
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
 /* LOGO  */
 .logo {
   display: flex;
@@ -370,11 +380,7 @@ img {
 
 .skills__title {
   text-align: center;
-  margin-top: 0;
   margin-bottom: 96px;
-  font-size: 48px;
-  line-height: 166%;
-  color: var(--black);
 }
 
 .skills__inner {
