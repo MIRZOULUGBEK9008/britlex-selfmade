@@ -171,10 +171,13 @@ img {
   font-size: 20px;
   font-weight: 500;
   white-space: nowrap;
+  transition: color 0.3s ease,
+  background-color 0.3s ease;
 }
 
 .button:hover {
-  opacity: 0.8;
+  color: var(--white);
+  background-color: var(--light-black);
 }
 
 .button:active {
@@ -193,6 +196,43 @@ img {
   font-size: 36px;
   padding: 32px 118px;
   border-radius: 15px;
+}
+
+.button--big:hover {
+  opacity: 0.8;
+}
+
+
+/* TOGGLER  */
+.toggler {
+  display: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toggler::before {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toggler--open::before {
+  display: block;
+}
+
+.toggler__img {
+  display: block;
+  width: 30px;
+  height: 17px;
+  object-fit: contain;
 }
 
 /* LOGO  */
@@ -232,14 +272,15 @@ img {
 }
 
 .site-header__sitenav {
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .sitenav__list {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -254,6 +295,7 @@ img {
   color: var(--light-black);
   font-size: 20px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .sitenav__link:hover {
@@ -395,7 +437,8 @@ img {
 
 
 /* MEDIA QUIRIES */
-@media only screen and (max-width: 992px) {
+/* 1000px */
+@media only screen and (max-width: 1000px) {
   .site-header {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -412,7 +455,7 @@ img {
 
   .button--transparent {
     font-size: 18px;
-    padding: 12px 40px;
+    padding: 12px 38px;
   }
 
   .hero__container {
@@ -422,6 +465,11 @@ img {
 
   .hero__content {
     max-width: 550px;
+  }
+
+  .hero__img-lighting {
+    width: 58px;
+    height: 58px;
   }
 
   .hero__title {
@@ -434,11 +482,6 @@ img {
     margin-bottom: 33px;
   }
 
-  .hero__img-lighting {
-    width: 58px;
-    height: 58px;
-  }
-
   .button--big {
     font-size: 24px;
     padding: 22px 78px;
@@ -447,5 +490,164 @@ img {
   .hero__img {
     width: 460px;
     height: 460px;
+  }
+
+  .skills__title {
+    font-size: 36px;
+    margin-bottom: 58px;
+  }
+}
+
+
+/* 850px */
+@media only screen and (max-width: 850px) {
+  .site-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .site-header__logo {
+    z-index: 150;
+  }
+
+  .toggler {
+    display: block;
+  }
+
+  .site-header__sitenav {
+    display: none;
+  }
+
+  .site-header__sitenav--open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-grow: 0;
+    z-index: 100;
+    padding: 90px 20px 20px 20px;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--white);
+    transform: translateX(0);
+  }
+
+  .site-header__sitenav .sitenav__list {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 1px solid var(--gray);
+    width: 100%;
+  }
+
+  .site-header__sitenav .sitenav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .site-header__sitenav .sitenav__item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .button--transparent {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .hero__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero__content {
+    max-width: 340px;
+  }
+
+  .hero__img-lighting {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .button--big {
+    font-size: 18px;
+    padding: 19px 67px;
+  }
+
+  .hero__img {
+    width: 352px;
+    height: 352px;
+  }
+
+  .skills__title {
+    font-size: 30px;
+    margin-bottom: 37px;
+  }
+}
+
+
+/* 650px */
+@media only screen and (max-width: 650px) {
+  .site-header {
+    padding-bottom: 10px;
+  }
+
+  .toggler__img {
+    width: 42px;
+    height: 24px;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .hero__content {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .hero__title {
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .hero__title br {
+    display: none;
+  }
+
+  .hero__text {
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  .hero__img {
+    order: -1;
+    width: 424px;
+    height: 424px;
+    margin-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .hero__img-lighting {
+    display: none;
+  }
+
+  .button--big {
+    padding: 24px 101px;
+  }
+
+  .skills__title {
+    margin-bottom: 34px;
   }
 }
