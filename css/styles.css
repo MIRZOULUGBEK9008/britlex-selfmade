@@ -511,6 +511,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: -120px;
   margin-bottom: -50px;
 }
 
@@ -518,15 +519,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 120px;
   margin-bottom: 50px;
-}
-
-.info__text-number-wrapper:not(:last-child) {
-  margin-right: 120px;
-}
-
-.info__text-number-wrapper:nth-child(n3) {
-  margin-right: 0;
 }
 
 .info__text {
@@ -731,6 +725,10 @@ img {
     font-size: 36px;
   }
 
+  .text {
+    font-size: 16px;
+  }
+
   .site-header {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -788,6 +786,43 @@ img {
   .skills__title {
     margin-bottom: 53px;
   }
+
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about-us__content {
+    max-width: 540px;
+  }
+
+  .about-us__img {
+    width: 336px;
+    height: 336px;
+  }
+
+  .about-us__title {
+    margin-bottom: 13px;
+  }
+
+  .info {
+    margin-left: -80px;
+    margin-bottom: -40px;
+  }
+
+  .info__text-number-wrapper {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .info__text {
+    font-size: 16px;
+  }
+
+  .info__number {
+    font-size: 30px;
+  }
+
 }
 
 
@@ -795,6 +830,10 @@ img {
 @media only screen and (max-width: 850px) {
   .title {
     font-size: 30px;
+  }
+
+  .text {
+    font-size: 14px;
   }
 
   .site-header {
@@ -893,6 +932,42 @@ img {
   .skills__title {
     margin-bottom: 37px;
   }
+
+  .about-us {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .about-us__img {
+    width: 295px;
+    height: 295px;
+  }
+
+  .about-us__content {
+    max-width: 321px;
+  }
+
+  .about-us__title {
+    margin-bottom: 0;
+  }
+
+  .info {
+    margin-left: -40px;
+    margin-bottom: -20px;
+  }
+
+  .info__text-number-wrapper {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .info__text {
+    font-size: 13px;
+  }
+
+  .info__number {
+    font-size: 22px;
+  }
 }
 
 
@@ -967,6 +1042,50 @@ img {
   .skills__title {
     margin-bottom: 34px;
   }
+
+  .about-us {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .about-us__container {
+    flex-direction: column;
+  }
+
+  .about-us__img {
+    order: -1;
+    width: 352px;
+    height: 352px;
+    margin-bottom: 25px;
+  }
+
+  .about-us__content-info-wrapper {
+    align-items: center;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .about-us__content {
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-us__title {
+    margin-bottom: 23px;
+  }
+
+  .info {
+    justify-content: space-between;
+  }
+
+  .info__number {
+    font-size: 24px;
+  }
+
+  .info__text {
+    font-size: 14px;
+  }
 }
 
 
@@ -974,6 +1093,10 @@ img {
 @media only screen and (max-width: 400px) {
   .title {
     font-size: 24px;
+  }
+
+  .text {
+    font-size: 13px;
   }
 
   .site-header {
@@ -1018,5 +1141,40 @@ img {
 
   .skills__title {
     margin-bottom: 40px;
+  }
+
+  .about-us {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .about-us__img {
+    width: 283px;
+    height: 283px;
+  }
+
+  .about-us__content {
+    text-align: justify;
+  }
+
+  .about-us__title {
+    font-size: 24px;
+  }
+
+  .about-us__text {
+    font-size: 13px;
+  }
+
+  .info {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .info__text-number-wrapper {
+    margin: 0;
+  }
+
+  .info__text-number-wrapper:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
