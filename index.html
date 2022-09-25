@@ -142,18 +142,26 @@
     <!-- SECTION-ABOUT-US  -->
     <section class="about-us">
       <div class="container about-us__container">
-        <div class="about-us__content">
-          <h2 class="about-us__title title">About us</h2>
-          <p class="about-us__text">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
-          </p>
-
+        <div class="about-us__content-info-wrapper">
+          <div class="about-us__content">
+            <h2 class="about-us__title title">About us</h2>
+            <p class="about-us__text text">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+          </div>
+          <!-- INFO  -->
           <dl class="info">
-            <dt class="info__text">Pupils</dt>
-            <dd class="info__number">800</dd>
-            <dt class="info__text">Teachers</dt>
-            <dd class="info__number">18</dd>
-            <dt class="info__text">Foreign languages</dt>
-            <dd class="info__number">6</dd>
+            <div class="info__text-number-wrapper">
+              <dt class="info__text">Pupils</dt>
+              <dd class="info__number">800</dd>
+            </div>
+            <div class="info__text-number-wrapper">
+              <dt class="info__text">Teachers</dt>
+              <dd class="info__number">18</dd>
+            </div>
+            <div class="info__text-number-wrapper">
+              <dt class="info__text">Foreign languages</dt>
+              <dd class="info__number">6</dd>
+            </div>
           </dl>
         </div>
 
@@ -215,18 +223,19 @@
       <div class="container contact-us__container">
         <img class="contact-us__img" src="img/contact-us.svg" alt="" aria-hidden="true" width="477" height="429">
 
-        <!-- FORM  -->
-        <form class="form" action="https://echo.htmlacademy.ru" target="_blank" method="POST">
-          <div class="form__content">
-            <h2 class="form__title title">Contact us</h2>
-            <p class="form__text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
+        <div class="contact-us__content-form-wrapper">
+          <div class="contact-us__content">
+            <h2 class="contact-us__title title">Contact us</h2>
+            <p class="contact-us__text text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
           </div>
-
-          <div class="form__inner">
-            <input class="form__input" type="email" placeholder="Enter Your E-mail" name="email" aria-label="Enter Your E-mail" required>
-            <button class="button form__button" type="submit">Subscribe</button>
-          </div>
-        </form>
+          <!-- FORM  -->
+          <form class="form" action="https://echo.htmlacademy.ru" target="_blank" method="POST">
+            <div class="form__inner">
+              <input class="form__input" type="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter Your E-mail" name="email" aria-label="Enter Your E-mail" required>
+              <button class="button form__button" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
