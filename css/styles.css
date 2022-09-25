@@ -460,6 +460,7 @@ img {
   }
 
   .sitenav__link {
+    width: 100%;
     font-size: 16px;
   }
 
@@ -542,6 +543,10 @@ img {
     height: 100vh;
     background-color: var(--white);
     transform: translateX(0);
+  }
+
+  .site-header__sitenav--open *:focus {
+    outline: none;
   }
 
   .site-header__sitenav .sitenav__list {
@@ -687,7 +692,7 @@ img {
     padding-top: 36px;
   }
 
-  .site-header__logo {
+  .logo__img {
     width: 71px;
     height: 36px;
   }
