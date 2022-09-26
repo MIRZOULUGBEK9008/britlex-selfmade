@@ -957,7 +957,7 @@ img {
     transform: translateX(0);
   }
 
-  .site-header__sitenav--open > *:focus {
+  .site-header__sitenav--open *:focus {
     outline: none;
   }
 
