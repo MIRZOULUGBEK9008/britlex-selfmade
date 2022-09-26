@@ -722,9 +722,8 @@ img {
 }
 
 .privacy-policy {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  font-size: 24px;
+  line-height: normal;
 }
 
 .site-footer__privacy-policy {
@@ -1527,5 +1526,9 @@ img {
     margin-top: 15px;
     font-size: 14px;
     padding: 20px;
+  }
+
+  .site-footer__privacy-policy {
+    max-width: 75%;
   }
 }
