@@ -1284,6 +1284,7 @@ img {
   .hero__content {
     align-items: center;
     max-width: 100%;
+    padding-right: 0;
   }
 
   .hero__title {
